@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// SQLite
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model reviews {
+  // ID
+  id          String  @id
+  // タイトル
+  title       String
+  // 著者
+  author      String
+  // 出版社
+  publisher   String
+  // 出版日
+  published   String
+  // 画像URL
+  imageUrl    String
+  // 感想
+  memo        String
+  // 作成日付
+  createdAt   DateTime  @default(now())
+  // 更新日付
+  updatedAt   DateTime  @updatedAt
+}

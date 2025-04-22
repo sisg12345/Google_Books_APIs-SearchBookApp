@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  app:
+    container_name: book-search-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    ports:
+      - "3000:3000"
+      - "5555:5555"
+    stdin_open: true
+    tty: true
