@@ -2,17 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TODO:  */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: oklch(13% 0.028 261.692);
-    --foreground: #ededed;
-  }
+  --background: oklch(13% 0.028 261.692);
 }
 
 body {
