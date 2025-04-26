@@ -43,7 +43,7 @@ export default function BookDetail({ width = 140, height = 200, book }: BookDeta
         </ul>
         <hr />
       </div>
-      <div className="my-2" dangerouslySetInnerHTML={{ __html: book.description }}></div>
+      <div className="my-2 text-white" dangerouslySetInnerHTML={{ __html: book.description }}></div>
     </>
   )
 }
