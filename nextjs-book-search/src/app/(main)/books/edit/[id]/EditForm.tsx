@@ -32,6 +32,7 @@ export default function EditForm({ src }: EditFormProps) {
         <textarea
           id="memo"
           name="memo"
+          maxLength={1000}
           rows={10}
           className="block bg-gray-100 border-2 border-sky-600 w-full rounded focus:bg-white focus:outline-none focus:border-sky-500"
           value={memo}
