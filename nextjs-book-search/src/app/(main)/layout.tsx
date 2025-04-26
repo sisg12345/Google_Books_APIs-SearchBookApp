@@ -2,7 +2,7 @@
 
 import { PropsWithChildren } from 'react'
 import PageLoading from '@/components/pages/LoadingPage'
-import { useSpinnerContext } from '@/contexts/useSpinnerContext'
+import { useSpinnerContext } from '@/contexts/SpinnerContext'
 
 export default function MainLayout({ children }: PropsWithChildren) {
   // スピナーの状態を取得

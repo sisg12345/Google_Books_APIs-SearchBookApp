@@ -3,8 +3,8 @@ import './globals.css'
 import { Inconsolata } from 'next/font/google'
 import { PropsWithChildren } from 'react'
 import Header from '@/components/organisms/header/Header'
-import { SearchKeywordProvider } from '@/contexts/useSearchKeywordContext'
-import { SpinnerProvider } from '@/contexts/useSpinnerContext'
+import { SearchKeywordProvider } from '@/contexts/SearchKeywordContext'
+import { SpinnerProvider } from '@/contexts/SpinnerContext'
 
 // フォント
 const font = Inconsolata({ subsets: ['latin'] })

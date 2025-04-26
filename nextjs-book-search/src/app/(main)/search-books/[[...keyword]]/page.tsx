@@ -3,8 +3,8 @@
 import { use, useEffect, useState } from 'react'
 import Button from '@/components/atoms/button/Button'
 import LinedBookDetails from '@/components/organisms/books/LinkedBookDetails'
-import { useSearchKeywordActionsContext } from '@/contexts/useSearchKeywordContext'
-import { useSpinnerActionsContext, useSpinnerContext } from '@/contexts/useSpinnerContext'
+import { useSearchKeywordActionsContext } from '@/contexts/SearchKeywordContext'
+import { useSpinnerActionsContext, useSpinnerContext } from '@/contexts/SpinnerContext'
 import { searchBooksByKeyword } from '@/lib/services/books/api'
 import type { Book } from '@/types/book/type'
 

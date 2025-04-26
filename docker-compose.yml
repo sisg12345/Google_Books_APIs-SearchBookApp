@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    container_name: book-search-app
+    container_name: book_search-app
     build:
       context: .
       dockerfile: Dockerfile

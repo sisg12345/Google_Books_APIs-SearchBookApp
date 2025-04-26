@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from 'next/navigation'
 import { PropsWithChildren } from 'react'
 import SearchForm from '@/components/organisms/form/SearchForm'
-import { useSearchKeywordContext } from '@/contexts/useSearchKeywordContext'
+import { useSearchKeywordContext } from '@/contexts/SearchKeywordContext'
 
 export default function MainTemplate({ children }: PropsWithChildren) {
   const router = useRouter()
